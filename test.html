@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claude — a thinking partner</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Sans+3:wght@400;500;600&display=swap');
+
+  :root{
+    --ink:#1B2430;
+    --paper:#F6F3EC;
+    --plum:#5B4B8A;
+    --ember:#C4622D;
+    --sage:#7A8B6F;
+    --line:rgba(27,36,48,0.14);
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Source Sans 3', sans-serif;
+    line-height:1.6;
+  }
+
+  .wrap{ max-width:920px; margin:0 auto; padding:0 32px; }
+
+  header{
+    padding:100px 0 70px;
+    border-bottom:1px solid var(--line);
+  }
+
+  .eyebrow{
+    font-size:13px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--plum);
+    font-weight:600;
+    margin-bottom:22px;
+  }
+
+  h1{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    font-size:clamp(40px, 7vw, 72px);
+    line-height:1.05;
+    letter-spacing:-0.01em;
+    max-width:11ch;
+  }
+
+  h1 em{
+    font-style:italic;
+    color:var(--ember);
+  }
+
+  .lede{
+    margin-top:28px;
+    font-size:19px;
+    max-width:52ch;
+    color:rgba(27,36,48,0.78);
+  }
+
+  section{
+    padding:64px 0;
+    border-bottom:1px solid var(--line);
+  }
+
+  .label{
+    font-size:13px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:rgba(27,36,48,0.5);
+    font-weight:600;
+    margin-bottom:20px;
+  }
+
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:36px;
+  }
+
+  .card h3{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    font-size:22px;
+    margin-bottom:10px;
+  }
+
+  .card p{
+    font-size:15px;
+    color:rgba(27,36,48,0.72);
+  }
+
+  .dot{
+    width:10px; height:10px;
+    border-radius:50%;
+    margin-bottom:18px;
+  }
+  .dot.plum{ background:var(--plum); }
+  .dot.ember{ background:var(--ember); }
+  .dot.sage{ background:var(--sage); }
+
+  .quote{
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    font-size:clamp(24px, 3.4vw, 34px);
+    line-height:1.4;
+    max-width:26ch;
+    color:var(--ink);
+  }
+
+  .quote span{
+    color:var(--ember);
+  }
+
+  footer{
+    padding:48px 0 80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    font-size:14px;
+    color:rgba(27,36,48,0.55);
+  }
+
+  @media (max-width:680px){
+    .grid{ grid-template-columns:1fr; }
+    header{ padding:70px 0 50px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Anthropic</div>
+    <h1>A careful mind, <em>on call</em></h1>
+    <p class="lede">Claude is built to read closely, reason honestly, and help without pretending to be more certain than it is. Less an oracle, more a sharp collaborator who shows their work.</p>
+  </header>
+
+  <section>
+    <div class="label">What it's for</div>
+    <div class="grid">
+      <div class="card">
+        <div class="dot plum"></div>
+        <h3>Writing</h3>
+        <p>Drafts, edits, and restructures — matching a voice instead of flattening it into something generic.</p>
+      </div>
+      <div class="card">
+        <div class="dot ember"></div>
+        <h3>Reasoning</h3>
+        <p>Works through ambiguous problems step by step, and says plainly when something is uncertain.</p>
+      </div>
+      <div class="card">
+        <div class="dot sage"></div>
+        <h3>Building</h3>
+        <p>Writes, debugs, and explains code across most languages — from a quick script to a full app.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="label">In its own register</div>
+    <p class="quote">"The point isn't to sound confident. It's to actually <span>be useful</span> — and to say so when it can't be."</p>
+  </section>
+
+  <footer>
+    <span>Claude — made by Anthropic</span>
+    <span>Est. 2023</span>
+  </footer>
+
+</div>
+
+</body>
+</html>
