@@ -2,7 +2,7 @@ pipeline {
     agent { label 'WOKRER_NODES' }
 
     environment {
-        IMAGE_NAME = "Hariharan SS/jenkinstesting"
+        IMAGE_NAME = "hariharan0909/jenkinstesting"
         CONTAINER_NAME = "jenkinstesting-container"
     }
 
