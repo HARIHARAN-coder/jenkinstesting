@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'WORKER_NODES' }
 
     environment {
         IMAGE_NAME = "hariharan0909/jenkinstesting"
